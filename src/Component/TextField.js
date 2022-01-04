@@ -7,7 +7,7 @@ function TestField({label, ...props}) {
         <div className="mb-2">
             <label htmlFor={field.name}>{label}</label> <br />
             <input 
-            className="form-control"
+            className={`form-control shadow-none ${meta.touched && meta.error && 'is-invalid'}`}
             autoComplete="off"
             {...field}{...props}
             />

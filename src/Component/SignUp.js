@@ -33,6 +33,10 @@ function SignUp() {
          }}
 
          validationSchema = {validate}
+         onSubmit = {values => {
+            console.log(values)
+         }
+        }
         >
         {formik => (
             <div>
