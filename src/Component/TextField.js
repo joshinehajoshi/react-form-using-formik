@@ -6,7 +6,11 @@ function TestField({label, ...props}) {
     return (
         <div className="mb-2">
             <label htmlFor={field.name}>{label}</label> <br />
-            <input type="text" />
+            <input 
+            className="form-control"
+            autoComplete="off"
+            {...field}{...props}
+            />
         </div>
     )
 }
